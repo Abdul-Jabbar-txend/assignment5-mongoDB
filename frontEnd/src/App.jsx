@@ -148,7 +148,6 @@ const App = () => {
               </tr>
             </thead>
             <tbody>
-              {/* render all user data using .map() */}
               {users &&
                 users.map((user, key) => (
                   <tr key={key}>
@@ -156,7 +155,6 @@ const App = () => {
                     <td>{user.email}</td>
                     <td>{user.age} </td>
                     <td>
-                      {/* specific user update button */}
                       <button
                         className="edit_btn action-btn"
                         onClick={() => handleUpdateUser(user._id)}
